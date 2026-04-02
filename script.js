@@ -152,14 +152,17 @@ function restart()
     for (let i = 0;i < row;i++)
     {
         let h1 = document.createElement("div")
-        let spans = "";
         guesses[i] = []
         for(let x = 0;x < column;x++)
         {
-            spans += "<span class='box' id=" + i + x + ">\u00A0</span>"
+            let spans = document.createElement("span")
+            //spans += "<span class='box' id=" + i + x + ">\u00A0</span>"
+            spans.id = i.toString() + x.toString()
+            spans.classList.add("box")
+            spans.textContent = "\u00A0"
+            h1.appendChild(spans)
             guesses[i][x] = ""
         }
-        h1.innerHTML = spans
         boxes.appendChild(h1)
     }
     currentword = wordsletter[column][getRandomInt(wordsletter[column].length)]
@@ -235,7 +238,7 @@ function handleSubmit()
             if(guesses[currentrow][i] == words[currentword][1][i].toUpperCase())
             {
                 let changeLetter = currentrow.toString() + i.toString()
-                document.getElementById(changeLetter).style.color = "green"
+                document.getElementById(changeLetter).style.backgroundColor = "green"
                 correctNumber++
                 keystatus[alphabets.indexOf(guesses[currentrow][i]) ] = "green"
                 console.log(alphabets.indexOf(guesses[currentrow][i]))
@@ -244,7 +247,7 @@ function handleSubmit()
                 if(words[currentword][1].toUpperCase().includes(guesses[currentrow][i]))
                 {
                     let changeLetter = currentrow.toString() + i.toString()
-                    document.getElementById(changeLetter).style.color = "yellow"
+                    document.getElementById(changeLetter).style.backgroundColor = "yellow"
                     if(keystatus[alphabets.indexOf(guesses[currentrow][i])] != "green")
                     {
                         keystatus[alphabets.indexOf(guesses[currentrow][i])] = "yellow"
