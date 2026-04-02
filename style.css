@@ -1,0 +1,44 @@
+.boxes{
+    text-align: center;
+    
+}
+.boxes span{
+    display: inline-block; /* 文字幅に合わせる */
+    width: 50px;           /* 幅 */
+    height: 50px;          /* 高さ */
+    line-height: 50px;     /* 高さと合わせると垂直中央 */
+    text-align: center;    /* 水平中央 */
+    border: 2px solid #333; /* 枠線 */
+    background-color: #f0f0f0; /* 背景色（任意） */
+    font-weight: bold;
+    font-size: xx-large;
+}
+.keyboad{
+    text-align: center;
+    
+    user-select: none;
+}
+.keys
+{
+    display: inline-block;
+    text-align: center;
+    width: 50px ;
+    height: 50px;
+    font-size: x-large;
+    user-select: none;
+
+}
+.bigkeys
+{
+    display: inline-block;
+    text-align: center;
+    width: 100px ;
+    height: 50px;
+    font-size: x-large;
+    user-select: none;
+}
+.restart
+{
+    font-size: x-large;
+}
+

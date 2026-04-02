@@ -1,0 +1,42 @@
+
+<title>Targetle</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="単語推測ゲーム">
+  <link href="style.css" rel="stylesheet" type="text/css" media="all">
+</head>
+ <!-- main -->
+<body>
+    
+  <main id="main">
+    <h1 style="text-align: center; border-bottom: solid 1px; padding: 10px 0px 20px 0px;";>Targettle</h1>
+
+    <div style="text-align: center;">
+    <input type="range" id="letters" min="3" max="8" style="margin-bottom: 20px;"/>
+    <label for="letters" id="lettersLabel">5 letters</label>
+    </div>
+
+    <div id ="inputBoxes" class="boxes">
+        
+
+    </div>
+
+    <div id="keyboad" class="keyboad">
+        
+    </div>
+
+    <h2 id="answer"  style="text-align: center;"></h2>
+    <h2 id="meaning"  style="text-align: center;"></h2>
+
+    <div style="text-align: center;">
+        <input type="button" id="restart" value="Restart" class="restart"/>
+    </div>
+    
+   
+    <script src ="script.js" ></script>
+  </main>
+ <!-- footer -->
+    <footer role="contentinfo">
+    </footer>
+</body>
+</html>
