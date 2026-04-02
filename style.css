@@ -1,6 +1,6 @@
 .boxes{
     text-align: center;
-    
+    white-space: nowrap
 }
 .boxes span{
     display: inline-block; /* 文字幅に合わせる */
@@ -22,7 +22,7 @@
 {
     display: inline-block;
     text-align: center;
-    width: 40px ;
+    width: 35px ;
     height: 50px;
     font-size: x-large;
     user-select: none;
