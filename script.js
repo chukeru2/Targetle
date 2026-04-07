@@ -264,6 +264,7 @@ function handleSubmit()
             meaning.textContent = "意味は..."+ words[currentword][2]
             inputLock = true
             clear = true
+            alert("正解！")
         }
         currentrow++
         currentcolumn=0
