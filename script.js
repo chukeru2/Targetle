@@ -51,7 +51,7 @@ let boxes = document.getElementById("inputBoxes")
 restartButton.addEventListener("click",() => {
     if(!clear)
     {
-        let res = window.confirm("本当に再スタートしますか？")
+        let res = window.confirm("本当にリトライしますか？")
         if(res)
         {
             restart()
@@ -113,7 +113,7 @@ async function initialize()
 
 
 
-    words = await loadCSV('words.csv');
+    words = await loadCSV('eikenswords.csv');
     
     for(let i = 0;i < words.length;i++)
     {
