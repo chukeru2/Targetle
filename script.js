@@ -1,3 +1,5 @@
+import React from 'react';
+
 async function loadCSV(url) {
     try {
         const response = await fetch(url);
