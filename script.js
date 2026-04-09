@@ -1,5 +1,3 @@
-import React from 'react';
-
 async function loadCSV(url) {
     try {
         const response = await fetch(url);
@@ -23,7 +21,7 @@ const keys = [
   ["Q", "W", "E", "R", "T", "Y", "U", "I", "O", "P"],
   ["A", "S", "D", "F", "G", "H", "J", "K", "L"],
   ["ENTER", "Z", "X", "C", "V", "B", "N", "M", "BACK"]
-];
+]
 const alphabets = []
 
 {
@@ -115,7 +113,7 @@ async function initialize()
 
 
 
-    words = await loadCSV('eikenswords.csv');
+    words = await loadCSV('words.csv');
     
     for(let i = 0;i < words.length;i++)
     {
@@ -168,7 +166,7 @@ function restart()
         boxes.appendChild(h1)
     }
     currentword = wordsletter[column][getRandomInt(wordsletter[column].length)]
-    console.log(currentword,words[currentword][1])
+    console.log(currentword,words[currentword][1],words[currentword][0])
 
     for(let i = 0;i < 28;i++)
     {
